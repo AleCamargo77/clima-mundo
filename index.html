@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <script defer src="./assets/scripts.js"></script>
+    <title>Clima no Mundo</title>
+</head>
+<body>
+    <header>
+        <h1>Clima no Mundo</h1>
+    </header>
+    <form class="input-info" id="form" action="submit">
+        <input type="search" id="input-data" placeholder="Informe a cidade">
+        <button>Buscar</button>
+    </form>
+    <div class="results">
+        <div class="title">--</div>
+        <div class="subtitle">
+        <div class="temp-title">Temperatura</div>
+        <div class="wind-title">Vento</div>
+        </div>
+        <div class="subtitle-content">
+        <div class="temp">--<sup>ºC</sup></div>
+        <div class="wind">--<span>Km/h</span></div>
+        </div>
+        <img class="image" src="http://openweathermap.org/img/wn/10d@2x.png"/>
+        <div class="description">Lorem ipsum dolor sit amet.</div>
+        
+    </div>
+    <div class="message"></div>
+    <footer>© Copyright <span id="year"></span> | Desenvolvido por <strong>Alessandro Camargo</strong></footer>  
+</body>
+</html>

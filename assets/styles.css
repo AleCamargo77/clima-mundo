@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Roboto:ital,wght@0,400;1,100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.192);
+}
+
+header h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 5rem;
+    color: #444;
+}
+
+.input-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+form input {
+    height: 2rem;
+    width: 15rem;
+    border-radius: 8px;
+    border: none;
+    padding: 5px;
+}
+
+form button {
+    height: 2rem;
+    width: 5rem;
+    border-radius: 8px;
+    background-color: #444;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    margin: 5px;
+}
+
+.results {
+    display: none;
+    align-items: center;
+    background-color: #444;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border-radius: 8px;
+    border: 1px solid #fff;
+}
+
+.title{
+    color: #fff;
+    text-align: center;
+    margin: 1rem;
+}
+
+.subtitle {
+    display: flex;
+    justify-content:space-around;
+    color: #777;
+}
+
+.subtitle-content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    color: #fff;
+}
+
+.description {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 2rem;
+
+}
+
+img {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.message {
+    color: #444;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer {
+    margin-top: 3rem;
+    text-align: center;
+    color: #444;
+}
+
+
+
+
+
+
