@@ -15,7 +15,7 @@ body {
 header h1 {
     font-size: 3rem;
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 3rem;
     color: #444;
 }
 
@@ -62,17 +62,24 @@ form button {
     margin: 1rem;
 }
 
-.subtitle {
+.subtitle{
     display: flex;
     justify-content:space-around;
     color: #777;
 }
 
-.subtitle-content {
+.subtitle-temp,.prev-temp {
     display: flex;
     justify-content: space-around;
     margin-top: 1rem;
     color: #fff;
+}
+
+.subtitle-prev {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    color: #777;
 }
 
 .description {

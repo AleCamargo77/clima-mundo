@@ -2,8 +2,6 @@ document.getElementById('form').addEventListener("submit", async function (event
             event.preventDefault();
             let inputCity = document.getElementById('input-data').value;
 
-            console.log(inputCity);
-
             if (inputCity !== '') {
                 warning("Carregando...");
                 clearInfo();
@@ -20,6 +18,8 @@ document.getElementById('form').addEventListener("submit", async function (event
                         name: urlJson.name,
                         pais: urlJson.sys.country,
                         temp: urlJson.main.temp,
+                        max: urlJson.main.temp_max,
+                        min: urlJson.main.temp_min,
                         wind: urlJson.wind.speed,
                         icon: urlJson.weather[0].icon,
                         description: urlJson.weather[0].description
@@ -35,13 +35,14 @@ document.getElementById('form').addEventListener("submit", async function (event
                     warning('');
                     document.querySelector('.results').style.display = 'block';
                     document.querySelector('.title').innerHTML = `${obj.name}, ${obj.pais}`;
+                    document.querySelector('.temp-max').innerHTML = `${obj.max}<sup> ºC</sup>`;
+                    document.querySelector('.temp-min').innerHTML = `${obj.min}<sup> ºC</sup>`;
                     document.querySelector('.temp').innerHTML = `${obj.temp}<sup> ºC</sup>`;
                     document.querySelector('.wind').innerHTML = `${obj.wind} Km/h`;
                     document.querySelector('.image').setAttribute("src", `http://openweathermap.org/img/wn/${obj.icon}@2x.png`);
                     document.querySelector('.description').innerHTML = `${obj.description}`;
                 }
                 
-
                 function warning(msg) {
                     document.querySelector('.message').innerHTML = msg;
                 }
